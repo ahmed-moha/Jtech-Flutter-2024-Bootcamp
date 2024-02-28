@@ -1,10 +1,12 @@
 import 'package:flutter/material.dart';
+import 'package:my_project/lesson%202/lessontwo.dart';
 
 void main() {
   runApp(
     const MaterialApp(
       // home: Home(),
-      home: HomeTwo(),
+      // home: HomeTwo(),
+      home: LessonTwo(),
     ),
   );
 }
@@ -107,7 +109,7 @@ class HomeTwo extends StatefulWidget {
 class _HomeTwoState extends State<HomeTwo> {
   int count = 0;
   double size = 24;
-  
+
   @override
   Widget build(BuildContext context) {
     print("BUILD CALLED");
@@ -129,7 +131,7 @@ class _HomeTwoState extends State<HomeTwo> {
             size: size,
           ),
           const SizedBox(
-            height: 50,
+            height: 80,
           ),
           Text(size.toStringAsFixed(0)),
           Slider(
