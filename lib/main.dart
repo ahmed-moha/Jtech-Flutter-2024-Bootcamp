@@ -1,13 +1,28 @@
+import 'package:device_preview/device_preview.dart';
 import 'package:flutter/material.dart';
 import 'package:my_project/lesson%202/lessontwo.dart';
+import 'package:my_project/lesson%203/lessonThree.dart';
+
+import 'lesson 2/screenTwo.dart';
 
 void main() {
   runApp(
-    const MaterialApp(
-      // home: Home(),
-      // home: HomeTwo(),
-      home: LessonTwo(),
-    ),
+     DevicePreview(
+       builder: (context) {
+         return MaterialApp(
+          useInheritedMediaQuery: true,
+      locale: DevicePreview.locale(context),
+      builder: DevicePreview.appBuilder,
+          // home: Home(),
+          // home: HomeTwo(),
+          home: const LessonThree(),
+          routes: {
+            "home":(context)=>const Home(),
+            "screenTwo":(context)=>const ScreenTwo()
+          },
+             );
+       }
+     ),
   );
 }
 

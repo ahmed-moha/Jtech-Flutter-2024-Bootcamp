@@ -164,12 +164,13 @@ class _LessonTwoState extends State<LessonTwo> {
           ),
           ElevatedButton(
             onPressed: () {
-              Navigator.push(
-                context,
-                MaterialPageRoute(
-                  builder: (context) => const ScreenTwo(),
-                ),
-              );
+              Navigator.pushNamed(context, "screenTwo");
+              // Navigator.push(
+              //   context,
+              //   MaterialPageRoute(
+              //     builder: (context) => const ScreenTwo(),
+              //   ),
+              // );
             },
             child: const Text("Go Screen Two"),
           )
