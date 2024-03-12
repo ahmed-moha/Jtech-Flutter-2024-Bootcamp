@@ -4,6 +4,7 @@ import 'package:my_project/lesson%202/lessontwo.dart';
 import 'package:my_project/lesson%203/lessonThree.dart';
 import 'package:my_project/lesson%204/lesson_four.dart';
 import 'package:my_project/lesson%205/lesson_five.dart';
+import 'package:my_project/lesson%206/lesson_six.dart';
 
 import 'lesson 2/screenTwo.dart';
 
@@ -13,7 +14,8 @@ void main() {
       // home: Home(),
       // home: HomeTwo(),
       // home: const LessonThree(),
-      home:const LessonFive(),
+      // home:const LessonFive(),
+      home: const LessonSix(),
       routes: {
         "home": (context) => const Home(),
         "screenTwo": (context) => const ScreenTwo()
